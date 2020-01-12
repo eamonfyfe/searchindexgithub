@@ -1,0 +1,14 @@
+<step title="Incoming Request" date="2020-01-06T13:28:25.998" instance="74b7fc" url="/api/deployments/latest" method="GET" type="request" pid="95,1,15" Connection="close" Content-Type="application/octet-stream" Accept="*/*" Accept-Encoding="gzip, deflate" Authorization="Bas..." Host="eamonssearchindex.scm.azurewebsites.net" User-Agent="AZURECLI/2.0.78" X-Client-IP="143.117.0.49" X-Client-Port="38424" X-WAWS-Unencoded-URL="/api/deployments/latest" CLIENT-IP="143.117.0.49:38424" X-ARR-LOG-ID="bc517415-1cd2-4745-b321-da3e9fe41c41" X-SITE-DEPLOYMENT-ID="eamonssearchindex" WAS-DEFAULT-HOSTNAME="eamonssearchindex.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" >
+  <step title="Cleanup Xml Logs" date="2020-01-06T13:28:26.001" /><!-- duration: 11ms -->
+  <step title="DeploymentService.GetResult" date="2020-01-06T13:28:26.021" >
+    <step title="DeploymentService.GetLatestDeployment" date="2020-01-06T13:28:26.025" >
+      <step title="DeploymentManager.GetResults" date="2020-01-06T13:28:26.028" >
+        <step title="Purge deployment items" date="2020-01-06T13:28:26.089" >
+          <step title="Remove temp-54f5, Pending, received at 1/6/20 1:28:09 PM" date="2020-01-06T13:28:26.119" /><!-- duration: 3ms -->
+        </step><!-- duration: 36ms -->
+      </step><!-- duration: 100ms -->
+      <step title="Deployment 498de570914e42ccb7cd58a606360cfa is Building" date="2020-01-06T13:28:26.130" /><!-- duration: 3ms -->
+    </step><!-- duration: 112ms -->
+  </step><!-- duration: 120ms -->
+  <step title="Outgoing response" date="2020-01-06T13:28:26.147" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 5ms -->
+</step><!-- duration: 163ms -->

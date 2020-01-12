@@ -1,0 +1,40 @@
+2020-01-06T13:28:25.3500945Z,Updating submodules.,5f8b0828-2fe3-4780-baeb-a47246a57405,0
+2020-01-06T13:28:25.3845886Z,Preparing deployment for commit id '498de57091'.,dddb7f84-a00e-4508-bb5e-353963ccc8b3,0
+2020-01-06T13:28:25.4682601Z,Repository path is /tmp/zipdeploy/extracted,20ff4884-98c8-472f-914f-b2afdb4a15af,0
+2020-01-06T13:28:25.4945835Z,Running oryx build...,66972e2f-9f54-47cf-9118-b893c12ba2d9,0
+	2020-01-06T13:28:25.4972750Z,Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.7 -i /tmp/8d792ac4f0a400f -p compress_virtualenv=tar-gz -p virtualenv_name=antenv --log-file /tmp/build-debug.log ,,0
+	2020-01-06T13:28:30.1425904Z,Build orchestrated by Microsoft Oryx&comma; https://github.com/Microsoft/Oryx,,0
+	2020-01-06T13:28:30.1625688Z,You can report issues at https://github.com/Microsoft/Oryx/issues,,0
+	2020-01-06T13:28:30.2022629Z,,,0
+	2020-01-06T13:28:30.2115336Z,Oryx Version      : 0.2.20191105.2&comma; Commit: 67e159d71419415435cb5d10c05a0f0758ee8809&comma; ReleaseTagName: 20191105.2,,0
+	2020-01-06T13:28:30.2286775Z,Build Operation ID: |khSpKq5C/ow=.bc79673b_,,0
+	2020-01-06T13:28:30.2400241Z,Repository Commit : 498de570914e42ccb7cd58a606360cfa,,0
+	2020-01-06T13:28:30.2494630Z,,,0
+	2020-01-06T13:28:31.7644714Z,Using intermediate directory '/tmp/8d792ac4f0a400f'.,,0
+	2020-01-06T13:28:32.5131778Z,,,0
+	2020-01-06T13:28:32.5282125Z,Copying files to the intermediate directory...,,0
+	2020-01-06T13:28:32.5735561Z,Done in 0 sec(s).,,0
+	2020-01-06T13:28:32.6007032Z,,,0
+	2020-01-06T13:28:32.6469882Z,Source directory     : /tmp/8d792ac4f0a400f,,0
+	2020-01-06T13:28:32.6574715Z,Destination directory: /home/site/wwwroot,,0
+	2020-01-06T13:28:32.6668010Z,,,0
+	2020-01-06T13:28:32.6757050Z,Python Version: /opt/python/3.7.5/bin/python3,,0
+	2020-01-06T13:28:32.6856337Z,Python Virtual Environment: antenv,,0
+	2020-01-06T13:28:32.6953398Z,Creating virtual environment ...,,0
+	2020-01-06T13:28:45.2740645Z,Activating virtual environment ...,,0
+	2020-01-06T13:28:45.2927955Z,,,0
+	2020-01-06T13:28:45.3021306Z,Upgrading pip...,,0
+	2020-01-06T13:28:47.2075475Z,Collecting pip,,0
+	2020-01-06T13:28:47.7326718Z,  Using cached https://files.pythonhosted.org/packages/00/b6/9cfa56b4081ad13874b0c6f96af8ce16cfbc1cb06bedf8e9164ce5551ec1/pip-19.3.1-py2.py3-none-any.whl,,0
+	2020-01-06T13:28:48.2134118Z,Installing collected packages: pip,,0
+	2020-01-06T13:28:48.2293893Z,  Found existing installation: pip 19.2.3,,0
+	2020-01-06T13:28:50.2080351Z,    Uninstalling pip-19.2.3:,,0
+	2020-01-06T13:28:50.2410669Z,      Successfully uninstalled pip-19.2.3,,0
+	2020-01-06T13:28:54.3553327Z,Successfully installed pip-19.3.1,,0
+	2020-01-06T13:28:54.9270720Z,Done in 9 sec(s).,,0
+	2020-01-06T13:28:54.9467030Z,Running pip install...,,0
+	2020-01-06T13:28:57.2226936Z,[13:28:57+0000] Collecting requests,,0
+	2020-01-06T13:28:57.3191684Z,[13:28:57+0000]   Downloading https://files.pythonhosted.org/packages/51/bd/23c926cd341ea6b7dd0b2a00aba99ae0f828be89d72b2190f27c11d4b7fb/requests-2.22.0-py2.py3-none-any.whl (57kB),,0
+	2020-01-06T13:28:57.8437572Z,ERROR: Could not find a version that satisfies the requirement tkinter (from -r requirements.txt (line 2)) (from versions: none),,1
+	2020-01-06T13:28:57.8666515Z,ERROR: No matching distribution found for tkinter (from -r requirements.txt (line 2)),,1
+	2020-01-06T13:29:01.1445351Z,ERROR: Could not find a version that satisfies the requirement tkinter (from -r requirements.txt (line 2)) (from versions: none)\nERROR: No matching distribution found for tkinter (from -r requirements.txt (line 2))\n/opt/Kudu/Scripts/starter.sh oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.7 -i /tmp/8d792ac4f0a400f -p compress_virtualenv=tar-gz -p virtualenv_name=antenv --log-file /tmp/build-debug.log ,,2

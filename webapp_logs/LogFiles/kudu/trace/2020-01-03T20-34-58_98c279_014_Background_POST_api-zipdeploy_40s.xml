@@ -1,0 +1,34 @@
+<step title="BackgroundTrace" date="2020-01-03T20:34:58.683" instance="98c279" url="/api/zipdeploy" method="POST" >
+  <step title="Creating temporary deployment" date="2020-01-03T20:34:58.782" /><!-- duration: 28ms -->
+  <step title="Performing fetch based deployment" date="2020-01-03T20:34:58.850" >
+    <step title="Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/02374f64-150c-4634-a5d5-b978ad9f5d53.zip (6.25 MB) to /tmp/zipdeploy/extracted" date="2020-01-03T20:34:58.895" /><!-- duration: 2834ms -->
+    <step title="DeploymentManager.Deploy(id:9816a4bd1ba34c30972511c39a4b0083)" date="2020-01-03T20:35:01.778" >
+      <step title="Collecting changeset information" date="2020-01-03T20:35:01.826" /><!-- duration: 85ms -->
+      <step title="Updating submodules" date="2020-01-03T20:35:01.923" /><!-- duration: 90ms -->
+      <step title="Determining deployment builder" date="2020-01-03T20:35:02.312" >
+        <step title="Builder is OryxBuilder" date="2020-01-03T20:35:02.345" /><!-- duration: 9ms -->
+      </step><!-- duration: 51ms -->
+      <step title="Building" date="2020-01-03T20:35:02.402" >
+        <step title="Executing external process" date="2020-01-03T20:35:02.635" type="process" path="starter.sh" arguments="oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.7 -i /tmp/8d7908c68c3bd55 -p compress_virtualenv=tar-gz -p virtualenv_name=antenv --log-file /tmp/build-debug.log " >
+          <step title="Process dump" date="2020-01-03T20:35:37.058" exitCode="1" type="processOutput" /><!-- duration: 9ms -->
+        </step><!-- duration: 34439ms -->
+        <step title="Error occurred" date="2020-01-03T20:35:37.092" type="error" text="ERROR: Could not find a version that satisfies the requirement tkinter (from -r requirements.txt (line 2)) (from versions: none)
+ERROR: No matching distribution found for tkinter (from -r requirements.txt (line 2))
+/opt/Kudu/Scripts/starter.sh oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.7 -i /tmp/8d7908c68c3bd55 -p compress_virtualenv=tar-gz -p virtualenv_name=antenv --log-file /tmp/build-debug.log " stackTrace="   at Kudu.Core.Infrastructure.Executable.ExecuteInternal(ITracer tracer, Func`2 onWriteOutput, Func`2 onWriteError, Encoding encoding, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 243
+   at Kudu.Core.Infrastructure.Executable.ExecuteWithProgressWriter(ILogger logger, ITracer tracer, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 115
+   at Kudu.Core.Deployment.Generator.ExternalCommandBuilder.RunCommand(DeploymentContext context, String command, Boolean ignoreManifest, String message) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/ExternalCommandBuilder.cs:line 111" /><!-- duration: 6ms -->
+      </step><!-- duration: 34795ms -->
+      <step title="Error occurred" date="2020-01-03T20:35:37.203" type="error" text="ERROR: Could not find a version that satisfies the requirement tkinter (from -r requirements.txt (line 2)) (from versions: none)
+ERROR: No matching distribution found for tkinter (from -r requirements.txt (line 2))
+/opt/Kudu/Scripts/starter.sh oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.7 -i /tmp/8d7908c68c3bd55 -p compress_virtualenv=tar-gz -p virtualenv_name=antenv --log-file /tmp/build-debug.log " stackTrace="   at Kudu.Core.Infrastructure.Executable.ExecuteInternal(ITracer tracer, Func`2 onWriteOutput, Func`2 onWriteError, Encoding encoding, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 243
+   at Kudu.Core.Infrastructure.Executable.ExecuteWithProgressWriter(ILogger logger, ITracer tracer, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 115
+   at Kudu.Core.Deployment.Generator.ExternalCommandBuilder.RunCommand(DeploymentContext context, String command, Boolean ignoreManifest, String message) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/ExternalCommandBuilder.cs:line 111
+   at Kudu.Core.Deployment.Generator.OryxBuilder.Build(DeploymentContext context) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/OryxBuilder.cs:line 65
+   at Kudu.Core.Deployment.DeploymentManager.Build(ChangeSet changeSet, ITracer tracer, IDisposable deployStep, IRepository repository, DeploymentInfoBase deploymentInfo, DeploymentAnalytics deploymentAnalytics, Boolean fullBuildByDefault) in /tmp/KuduLite/Kudu.Core/Deployment/DeploymentManager.cs:line 704" /><!-- duration: 8ms -->
+    </step><!-- duration: 35440ms -->
+    <step title="Cleaning up temp files" date="2020-01-03T20:35:37.223" /><!-- duration: 1712ms -->
+    <step title="Reloading status file with latest updates" date="2020-01-03T20:35:38.956" >
+      <step title="WebHooksManager.PublishEventAsync: PostDeployment" date="2020-01-03T20:35:38.966" /><!-- duration: 19ms -->
+    </step><!-- duration: 32ms -->
+  </step><!-- duration: 40156ms -->
+</step><!-- duration: 40360ms -->

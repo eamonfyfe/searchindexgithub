@@ -1,0 +1,7 @@
+<step title="Incoming Request" date="2020-01-03T20:31:59.448" instance="98c279" url="/api/zipdeploy?isAsync=true" method="POST" type="request" pid="95,1,14" Connection="close" Content-Type="application/octet-stream" Accept="*/*" Accept-Encoding="gzip, deflate" Authorization="Bas..." Host="eamonssearchindex.scm.azurewebsites.net" User-Agent="AZURECLI/2.0.78" Content-Length="6556642" X-Client-IP="86.21.242.3" X-Client-Port="53019" X-WAWS-Unencoded-URL="/api/zipdeploy?isAsync=true" CLIENT-IP="86.21.242.3:53019" X-ARR-LOG-ID="a1ccfdd5-a082-48f3-bdb2-c9e786331b6d" X-SITE-DEPLOYMENT-ID="eamonssearchindex" WAS-DEFAULT-HOSTNAME="eamonssearchindex.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" >
+  <step title="ZipPushDeploy" date="2020-01-03T20:32:00.131" >
+    <step title="Writing zip file to /tmp/zipdeploy/bba992db-33b7-46c6-8edc-1514ea30e828.zip" date="2020-01-03T20:32:00.179" /><!-- duration: 193ms -->
+    <step title="Start deployment in the background" date="2020-01-03T20:32:00.444" /><!-- duration: 978ms -->
+  </step><!-- duration: 1302ms -->
+  <step title="Outgoing response" date="2020-01-03T20:32:01.479" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 4ms -->
+</step><!-- duration: 2040ms -->

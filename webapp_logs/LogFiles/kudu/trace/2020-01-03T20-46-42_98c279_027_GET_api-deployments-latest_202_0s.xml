@@ -1,0 +1,10 @@
+<step title="Incoming Request" date="2020-01-03T20:46:42.730" instance="98c279" url="/api/deployments/latest" method="GET" type="request" pid="95,1,23" Connection="close" Content-Type="application/octet-stream" Accept="*/*" Accept-Encoding="gzip, deflate" Authorization="Bas..." Host="eamonssearchindex.scm.azurewebsites.net" User-Agent="AZURECLI/2.0.78" X-Client-IP="86.21.242.3" X-Client-Port="56772" X-WAWS-Unencoded-URL="/api/deployments/latest" CLIENT-IP="86.21.242.3:56772" X-ARR-LOG-ID="38a6af5d-44f7-4de3-b006-70cd1e7f761c" X-SITE-DEPLOYMENT-ID="eamonssearchindex" WAS-DEFAULT-HOSTNAME="eamonssearchindex.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" >
+  <step title="Cleanup Xml Logs" date="2020-01-03T20:46:42.739" /><!-- duration: 26ms -->
+  <step title="DeploymentService.GetResult" date="2020-01-03T20:46:42.796" >
+    <step title="DeploymentService.GetLatestDeployment" date="2020-01-03T20:46:42.831" >
+      <step title="DeploymentManager.GetResults" date="2020-01-03T20:46:42.842" /><!-- duration: 202ms -->
+      <step title="Deployment 6c23dbf8564e451bb4e3072c5b823cea is Building" date="2020-01-03T20:46:43.069" /><!-- duration: 19ms -->
+    </step><!-- duration: 274ms -->
+  </step><!-- duration: 319ms -->
+  <step title="Outgoing response" date="2020-01-03T20:46:43.124" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 10ms -->
+</step><!-- duration: 421ms -->
