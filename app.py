@@ -5,9 +5,7 @@ from flask import Flask, render_template
 
 # -*- coding: utf-8 -*-
 # encoding=utf8
-
 app = Flask(__name__)
-
 
 @app.route('/')
 def index():
