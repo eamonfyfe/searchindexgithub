@@ -3,9 +3,8 @@ from flask import *
 
 from flask import Flask, render_template
 
-# -*- coding: utf-8 -*-
-# encoding=utf8
 app = Flask(__name__)
+
 
 @app.route('/')
 def index():
@@ -34,7 +33,6 @@ def get_search():
     foundInSearchAds = responseads.json()
     search_result = []
     for value in foundInSearch['value']:
-        print foundInSearch['value']
         search_result.append("author: {}".format(value['author']))
         search_result.append("text: {}".format(value['text'].encode("utf-8")))
 
